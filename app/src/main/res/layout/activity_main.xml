@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/judul"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Biodata Diri"
+        android:textColor="@android:color/holo_orange_dark"
+        android:textSize="24sp"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:layout_below="@+id/judul"
+        android:id="@+id/edittextNama"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama"
+        android:inputType="textPersonName"/>
+
+    <EditText
+        android:layout_below="@id/edittextNama"
+        android:id="@+id/edittextJurusan"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Jurusan"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:layout_below="@id/edittextJurusan"
+        android:id="@+id/edittextNoHP"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="No HP"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_below="@id/edittextNoHP"
+        android:id="@+id/textStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="Status"
+        android:textSize="18sp" />
+
+    <RadioGroup
+        android:layout_below="@+id/textStatus"
+        android:id="@+id/radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/jomblo"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Jomblo" />
+        <RadioButton
+            android:id="@+id/pacaran"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Pacaran" />
+    </RadioGroup>
+
+    <TextView
+        android:layout_below="@+id/radio"
+        android:id="@+id/textHobby"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="Hobby"
+        android:textSize="18sp" />
+
+    <CheckBox
+        android:layout_below="@+id/textHobby"
+        android:id="@+id/tidur"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tidur" />
+
+    <CheckBox
+        android:layout_below="@+id/tidur"
+        android:id="@+id/makan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Makan" />
+
+    <CheckBox
+        android:layout_below="@id/makan"
+        android:id="@+id/maingame"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Main Game" />
+
+    <Button
+        android:id="@+id/exit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Exit"
+        android:onClick="exit"/>
+
+    <Button
+        android:id="@+id/kirim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:text="Kirim"
+        android:onClick="kirim"/>
+
+</RelativeLayout>
